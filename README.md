@@ -64,42 +64,19 @@ Remember that just because you ask for a feature improvement doesn't mean we'll 
 Driver Contact Information
 --------------------------
 
-Some of the issue you may be experiencing are due to the various video drivers.  Here is an incomplete list of places that you might be able to file bugs or get additional help:
+Some of the issue you may be experiencing are due to the various video drivers. Here is an incomplete list of places that you might be able to file bugs or get additional help. If you know of any other places, please let us know.
 
-### AMD
+### Mesa (AMD / Intel / NVIDIA Nouveau)
 
-AMD Steam Linux forum for reporting **compatibility and performance issues with AMD hardware**:
+For discussions, there is the [mesa-users email list](https://mesa3d.org/lists.html). Bugs and feature requests should be logged in the [GitLab issue tracker](https://gitlab.freedesktop.org/mesa/mesa/-/issues).
 
-https://community.amd.com/community/devgurus/steam-linux
+### NVIDIA Proprietary Drivers
 
-The AMD Open Source driver is a part of Mesa, so use the links under "Intel" to report issues with it.
-
-### Intel
-
-For discussions, there is the mesa-users email list:
-
-http://mesa3d.org/lists.html
-
-Bugs and feature requests should be logged in bugzilla:
-
-http://mesa3d.org/bugs.html
-
-### NVIDIA
-
-NVIDIA supported drivers
-- https://devtalk.nvidia.com/default/board/98
-
-Open Source NVIDIA driver (nouveau)
-- http://nouveau.freedesktop.org/wiki/
-
-If you know of any other places, please let us know.
+For disussions, there is the official [NVIDIA Graphics on Linux forum](https://forums.developer.nvidia.com/c/gpu-graphics/linux/148).
 
 Known Video Driver/Card issues:
 ----------------------------------
 
 ### NVIDIA
 
-6xxx and 7xxx hardware have been EOL'd. The code specific to these GPUs isn't even compiled into drivers anymore.
-
-6xxx and 7xxx GPUs are incapable of performing sRGB functionality needed by Source Engine titles when being driven by OpenGL. (The sRGB behavior as specified in OpenGL is slightly different than the behavior that was actually unspecified in D3D9, which is why this works in D3D9 but not in OpenGL).
-
+GeForce 6 and 7-series hardware has been EOL'd. The code specific to these GPUs is no longer compiled into drivers. These GPUs are incapable of performing certain sRGB functionality needed by Source Engine titles when driven by OpenGL. The sRGB behavior as specified in OpenGL is slightly different than the behavior that was actually unspecified in D3D9, which is why this works in D3D9 but not in OpenGL.
